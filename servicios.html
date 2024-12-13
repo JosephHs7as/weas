@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reclamaciones</title>
+    <link rel="stylesheet" href="./styles3.css">
+</head>
+<body>
+
+    <header>
+        <h1>Formulario de Reclamaciones</h1>
+        <p>¿Tienes algún problema? completa el formulario</p>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <form action="submit-reclamacion" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono de contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono" required>
+                </div>
+
+               
+                <div class="form-group">
+                    <label for="motivo">Motivo de la reclamación:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="producto-defectuoso">Producto defectuoso</option>
+                        <option value="pedido-incompleto">Pedido incompleto</option>
+                        <option value="retraso-entrega">Retraso en la entrega</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="descripcion">Descripción del problema:</label>
+                    <textarea id="descripcion" name="descripcion" placeholder="Describe el problema ..." rows="5" required></textarea>
+                </div>
+
+                
+                <div class="form-group">
+                    <button type="submit">Enviar Reclamación</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Pizzas. Estamos aquí para ayudarte.</p>
+    </footer>
+    <script src="./scripts.js"></script>
+</body>
+</html>
